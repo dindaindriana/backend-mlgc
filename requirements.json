@@ -1,0 +1,6 @@
+{
+    "backend-service-url": "https://submission-asclepius-api-478174347095.asia-southeast2.run.app",
+    "frontend-service-url": "https://submissionmlgc-rachel.et.r.appspot.com/",
+    "project-id": "submissionmlgc-rachel",
+    "bucket-name": "submission-asclepius-rachel"
+}
