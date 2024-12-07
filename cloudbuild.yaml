@@ -5,7 +5,7 @@ steps:
       [
         "build",
         "-t",
-        "asia-southeast2-docker.pkg.dev/submission-mlgc-dinda/submission-mlgc/submission-asclepius-api",
+        "asia-southeast2-docker.pkg.dev/submissionmlgc-dinda/submission-mlgc/submission-asclepius-api",
         ".",
       ]
 
@@ -14,7 +14,7 @@ steps:
     args:
       [
         "push",
-        "asia-southeast2-docker.pkg.dev/submission-mlgc-dinda/submission-mlgc/submission-asclepius-api",
+        "asia-southeast2-docker.pkg.dev/submissionmlgc-dinda/submission-mlgc/submission-asclepius-api",
       ]
 
   # Step 3: Deploy the image to Cloud Run
@@ -25,7 +25,7 @@ steps:
       - "deploy"
       - "submission-asclepius-api"
       - "--image"
-      - "asia-southeast2-docker.pkg.dev/submission-mlgc-dinda/submission-mlgc/submission-asclepius-api"
+      - "asia-southeast2-docker.pkg.dev/submissionmlgc-dinda/submission-mlgc/submission-asclepius-api"
       - "--platform"
       - "managed"
       - "--region"
@@ -34,4 +34,4 @@ steps:
 options:
   logging: CLOUD_LOGGING_ONLY
 images:
-  - "asia-southeast2-docker.pkg.dev/submission-mlgc-dinda/submission-mlgc/submission-asclepius-api"
+  - "asia-southeast2-docker.pkg.dev/submissionmlgc-dinda/submission-mlgc/submission-asclepius-api"
